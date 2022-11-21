@@ -1,0 +1,24 @@
+*
+
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: black;
+}
+
+.hero-image{
+    background: url(/static/images/hero-image.jpg) no-repeat;
+    background-size:cover;
+    height: calc(75vh - 164px);
+}
+
+.hero-comment {
+    position: relative;
+    left: 20%;
+    top: calc(40vh - 164px);
+    color: beige;
+}
+
