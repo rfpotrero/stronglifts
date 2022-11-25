@@ -3,7 +3,7 @@
 
 {% block content %}
 
-<div class=" hero-image">
+<div class= "hero-image">
     
     <div class="hero-comment">
         <p>
@@ -13,21 +13,50 @@
     </div> 
 </div>
 
-<div class="container">
-    <div>
-        Display image
-    </div>
-    <div>
-        Why us Text and button 
-    </div>
+<div class="container pt-5">
+    <div class="row">
+        <div class="col">
+            <img class="img-fluid" src="static/images/why-us.jpg" alt="">
+        </div>
+        <div class="col">
+            <p>We are proud of the results and transformations from our client! This ensure by careful monitoring and adjusting their programs and most important giving them an space to improve.</p>
+            <p>Join us for a free trial if you want to know more</p>
+            <button type="button" class="btn btn-primary">Free Trial</button>
+        </div>
+    </div>       
 </div>
 
-<div class="container">
-    <div>
-        display image
-    </div>
-    <div>
-        icon list and text for benefit
+<div class="container pt-5">
+    <div class="row">
+        <div class="col">
+            <div>
+               <h1>
+                <i class="fa-solid fa-heart"></i>
+               </h1> 
+                <p>Improve your overall health</p>
+            </div>
+            <div>
+                <h1>
+                    <i class="fa-solid fa-ranking-star"></i>
+                </h1>
+                <p>Get social by participating in our monthly challenges</p>
+            </div>
+            <div>
+                <h1>
+                    <i class="fa-solid fa-medal"></i>
+                </h1>
+                <p>Achieve your goals!</p>
+            </div>
+            <div>
+                <h1>
+                    <i class="fa-sharp fa-solid fa-dumbbell"></i>
+                </h1>
+                <p>Get stronger!</p>
+            </div>
+        </div>
+        <div class="col">
+            <img class="img-fluid" src="static/images/results.jpg" alt="">
+        </div> 
     </div>
 </div>
 {% endblock%}
