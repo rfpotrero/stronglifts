@@ -20,5 +20,6 @@ body {
     left: 20%;
     top: calc(40vh - 164px);
     color: beige;
+    width: 40%;
 }
 
