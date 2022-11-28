@@ -1,0 +1,230 @@
+[
+   {
+      "pk":1,
+      "model":"products.product",
+      "fields":{
+         "name":"One Month Membership",
+         "description":"This memberships allows you to use the gym and attend all the classes you want for one month. The access to the gym is unrestricted within business hours",
+         "price":59.99,
+         "category":1,
+         "image_url":"",
+         "image":""
+      }
+   },
+   {
+      "pk":2,
+      "model":"products.product",
+      "fields":{
+         "name":"Three Month Membership",
+         "description":"This memberships allows you to use the gym and attend all the classes you want for three months. The access to the gym is unrestricted within business hours",
+         "price":169.99,
+         "category":1,
+         "image_url":"",
+         "image":""
+      }
+   },
+   {
+      "pk":3,
+      "model":"products.product",
+      "fields":{
+         "name":"Six Month Membership",
+         "description":"This memberships allows you to use the gym and attend all the classes you want for six month. The access to the gym is unrestricted within business hours",
+         "price":299.00,
+         "category":1,
+         "image_url":"",
+         "image":""
+      }
+   },
+   {
+      "pk":4,
+      "model":"products.product",
+      "fields":{
+         "name":"One Year Month Membership",
+         "description":"This is our most famous membership! Allows you to use the gym and attend all the classes you want for six month AND includes free Personal Training sessions to get you started! The access to the gym is unrestricted within business hours",
+         "price":599.00,
+         "category":1,
+         "image_url":"",
+         "image":""
+      }
+   },
+   {
+      "pk":5,
+      "model":"products.product",
+      "fields":{
+         "name":"One Month off peak Membership",
+         "description":"This membership allows you to use the gym and attend all the classes you want for one month excluding weekends and holidays",
+         "price":39.99,
+         "category":1,
+         "image_url":"",
+         "image":""
+      }
+   },
+   {
+      "pk":6,
+      "model":"products.product",
+      "fields":{
+         "name":"One Week Membership",
+         "description":"Are you visiting town and wanted to squeeze a workout! This membership allows you to use the gym and attend all the classes you want for one week!",
+         "price":19.99,
+         "category":1,
+         "image_url":"",
+         "image":""
+      }
+   },
+   {
+      "pk":7,
+      "model":"products.product",
+      "fields":{
+         "name":"Bring your friend day pass!",
+         "description":"We know working out alone could be boring, bring your friend for a day with this day pass",
+         "price":10,
+         "category":1,
+         "image_url":"",
+         "image":""
+      }
+   },
+   {
+      "pk":8,
+      "model":"products.product",
+      "fields":{
+         "name":"Fat loss meal plan",
+         "description":"This 6 months plan will help you to lose that stubborn fat and get the body you really want! Our dieticians will have regular checkup with you to ensure a good progession and to give you the tools to take control of your diet!",
+         "price":99.99,
+         "category":2,
+         "image_url":"",
+         "image":""
+      }
+   },
+   {
+      "pk":9,
+      "model":"products.product",
+      "fields":{
+         "name":"Muscle up meal plan",
+         "description":"Time to grow some muscles with this long year meal plan. Our dieticians will work with you through bulking and cutting phases to ensure you achieve your goals and to enable you to reach and maintain those goals. We recommend this meal plan along Personal Training sessions for maximum results",
+         "price":199.99,
+         "category":2,
+         "image_url":"",
+         "image":""
+      }
+   },
+   {
+      "pk":10,
+      "model":"products.product",
+      "fields":{
+         "name":"Body Recomposition",
+         "description":"This meal plan will help to quickly change your physique. This plan is designed around the principles of body recomposition where losing weight and gain muscle are combined. One our dieticians will work with you to guide you at every step of the journey. This plan is the best for beginners and people who want to make real changes in the way they look",
+         "price":199.99,
+         "category":2,
+         "image_url":"",
+         "image":""
+      }
+   },
+   {
+      "pk":11,
+      "model":"products.product",
+      "fields":{
+         "name":"10 Personal Training Session",
+         "description":"Purchase this voucher and enjoy 10 Session with one of Personal Trainers.",
+         "price":400,
+         "category":3,
+         "image_url":"",
+         "image":""
+      }
+   },
+   {
+      "pk":12,
+      "model":"products.product",
+      "fields":{
+         "name":"Single Personal Trainer session",
+         "description":"Need to tune the exercises or checkup the form of your exercises. Look no more this single session pass is what you are looking for!",
+         "price":50,
+         "category":3,
+         "image_url":"",
+         "image":""
+      }
+   },
+   {
+      "pk":13,
+      "model":"products.product",
+      "fields":{
+         "name":"Dedicated Personal Trainer for one month",
+         "description":"You want to get the most of the gym. Get this pass and enjoy training with one us trainers for a month to ensure to reach your goals!",
+         "price":600,
+         "category":3,
+         "image_url":"",
+         "image":""
+      }
+   },
+   {
+      "pk":14,
+      "model":"products.product",
+      "fields":{
+         "name":"StrongLifts Hoodie",
+         "description":"Lift in style with this hoodie! Make of a blend of cotton and synthetic materials with the logo on the back!",
+         "price":30,
+         "category":4,
+         "image_url":"",
+         "image":""
+      }
+   },
+   {
+      "pk":15,
+      "model":"products.product",
+      "fields":{
+         "name":"StrongLifts T-shirt",
+         "description":"100% cotton T-Shirt in several colours. Make you you get yours!",
+         "price":15,
+         "category":4,
+         "image_url":"",
+         "image":""
+      }
+   },
+   {
+      "pk":16,
+      "model":"products.product",
+      "fields":{
+         "name":"StrongLifts Leggings",
+         "description":"Working out was never this comfy! They come in several colours and sizes for women and men!",
+         "price":25,
+         "category":4,
+         "image_url":"",
+         "image":""
+      }
+   },
+   {
+      "pk":17,
+      "model":"products.product",
+      "fields":{
+         "name":"StrongLifts Mug",
+         "description":"Enjoy your morning coffee before hitting the gym with this mug!",
+         "price":8,
+         "category":5,
+         "image_url":"",
+         "image":""
+      }
+   },
+   {
+      "pk":18,
+      "model":"products.product",
+      "fields":{
+         "name":"Water bottle",
+         "description":"Keep hydrated during your workout this with reusable water bottle! Come in several colours",
+         "price":10,
+         "category":5,
+         "image_url":"",
+         "image":""
+      }
+   },
+   {
+      "pk":19,
+      "model":"products.product",
+      "fields":{
+         "name":"Protein Shake bottle",
+         "description":"Meet all your macro with this shake bottle using the special system to avoid spillage!",
+         "price":15,
+         "category":5,
+         "image_url":"",
+         "image":""
+      }
+   }
+]
