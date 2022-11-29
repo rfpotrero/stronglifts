@@ -11,3 +11,15 @@ def memberships(request):
         'all_memberships': all_memberships
     }
     return render(request, 'products/memberships.html', context)
+
+
+def store(request):
+    """ View to display all products"""
+    all_products = Product.objects.exclude(category="1")
+
+    context = {
+        'all_products': all_products
+    }
+    return render(request, 'products/store.html', context)
+
+    
