@@ -3,6 +3,22 @@
 
 {% block content %}
 
-<H1>Works!</H1>
+<div class="wrapper container-fluid">
+   <div class="row mb-2 g-4">
+        {% for membership in all_memberships %}
+            <div class="col-xl-3">
+                <div class="card h-100 text-center">
+                    <i class="fa-solid fa-dumbbell"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">{{ membership.name }}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">{{ membership.price }}</h6>
+                        <p class="card-text">{{ membership.description }}</p>
+                        <a href="#" class="btn btn-primary ">Subscribe Now!</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+   </div>
+</div>
 
 {% endblock %}
