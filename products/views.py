@@ -20,7 +20,7 @@ def store(request):
     if request.GET:
         if 'category' in request.GET:
             products = Product.objects.filter(category=request.GET['category'])
-            print(products)
+            
 
     context = {
         'products': products,
