@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Product
+from .models import Product, Category
 
 
 def memberships(request):
@@ -14,12 +14,15 @@ def memberships(request):
 
 
 def store(request):
-    """ View to display all products"""
-    all_products = Product.objects.exclude(category="1")
+    """ View to display all products and sort by category"""
+    products = Product.objects.exclude(category="1")
+
+    if request.GET:
+        if 'category' in request.GET:
+            products = Product.objects.filter(category=request.GET['category'])
+            print(products)
 
     context = {
-        'all_products': all_products
+        'products': products,
     }
     return render(request, 'products/store.html', context)
-
-    

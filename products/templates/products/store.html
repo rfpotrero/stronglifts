@@ -2,9 +2,25 @@
 {% load static %}
 
 {% block content%}
+<div class="wrapper container">
+    <div class="row justify-content-center">
+        <div class="col col-2">
+            <a class="btn btn-primary" href="{% url 'store' %}?category=2" role="button">Meal Plans</a>
+        </div>
+        <div class="col col-2">
+            <a class="btn btn-primary" href="{% url 'store' %}?category=3" role="button">PT Sessions</a>
+        </div>
+        <div class="col col-2">
+            <a class="btn btn-primary" href="{% url 'store' %}?category=4" role="button">Clothing</a>
+        </div>
+        <div class="col col-2">
+            <a class="btn btn-primary" href="{% url 'store' %}?category=5" role="button">Accessories</a>
+        </div>
+    </div>
+</div>
 <div class="wrapper container-fluid">
     <div class="row mb-2 g-4">
-         {% for product in all_products %}
+         {% for product in products %}
              <div class="col-xl-3">
                  <div class="card h-100 text-center">
                      <i class="fa-solid fa-dumbbell"></i>
