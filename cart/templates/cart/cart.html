@@ -2,5 +2,33 @@
 {% load static %}
 
 {% block content %}
+<div class="wrapper container">
+{% if cart_items %}
+    <div class="table-responsive rounded">
+        <table class="table table-borderless">
+            <thead>
+                <tr>
+                    <th scope="col">Product Info</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Quantity</th>
+                </tr>
+            </thead>
+            {% for item in cart_items %}
+                <tr>
+                    <td>
+                        <p>{{ item.product.name }}</p>
+                    </td>
+                    <td>
+                        <p>{{ item.product.price }}</p>
+                    </td>
+                    <td>
+                        <p>{{ item.quantity }}</p>
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+</div>
 
+{% endif %}
 {% endblock %}
