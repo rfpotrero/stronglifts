@@ -2,30 +2,50 @@
 {% load static %}
 
 {% block content %}
-<div class="wrapper container">
+<div class="wrapper container bg-light">
 {% if cart_items %}
     <div class="table-responsive rounded">
         <table class="table table-borderless">
-            <thead>
+            <thead class="border-bottom">
                 <tr>
                     <th scope="col">Product Info</th>
                     <th scope="col">Price</th>
                     <th scope="col">Quantity</th>
+                    <th scope="col">Total</th>
+                    <th scope="col"></th>
                 </tr>
             </thead>
+            
             {% for item in cart_items %}
-                <tr>
-                    <td>
+                <tr class="border-bottom border-dark">
+                    <td class="p-2">
                         <p>{{ item.product.name }}</p>
                     </td>
-                    <td>
+                    <td class="p-2">
                         <p>{{ item.product.price }}</p>
                     </td>
-                    <td>
+                    <td class="p-2">
                         <p>{{ item.quantity }}</p>
+                    </td>
+                    <td class="p-2">
+                        <p>{{ item.total }}</p>
+                    </td>
+                    <td class="p-2">
+                        <a href="">Edit</a>
+                        <a href="">Remove</a>
                     </td>
                 </tr>
             {% endfor %}
+            <tfoot>
+                <td></td>
+                <td></td>
+                <td>
+                    <p>Total</p>
+                </td>
+                <td>
+                    <p> {{ cart_total }}</p>
+                </td>
+            </tfoot>
         </table>
     </div>
 </div>
