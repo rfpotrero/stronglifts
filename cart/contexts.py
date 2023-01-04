@@ -26,5 +26,4 @@ def cart_contents(request):
         'cart_total': cart_total
     }
 
-    print(cart_total)
     return context

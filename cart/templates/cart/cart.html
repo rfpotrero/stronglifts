@@ -31,8 +31,7 @@
                         <p>{{ item.total }}</p>
                     </td>
                     <td class="p-2">
-                        <a href="">Edit</a>
-                        <a href="">Remove</a>
+                        <a href="{% url 'remove_from_cart' item.product.id %}">Remove</a>
                     </td>
                 </tr>
             {% endfor %}
@@ -50,7 +49,7 @@
     </div>
     <div>
         <a class="btn btn-primary" href="/products/store">Keep Shooping</a>
-        <a class="btn btn-primary" href="">Checkout</a>
+        <a class="btn btn-primary" href="/checkout/">Checkout</a>
     </div>
 </div>
 
