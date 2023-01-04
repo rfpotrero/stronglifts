@@ -1,12 +1,13 @@
 from django.db import models
 from django.db.models import Sum
-from shortuuid.django_fields import ShortUUIDField
 from products.models import Product
+
+import shortuuid
 
 
 class Order(models.Model):
 
-    order_number = models.CharField(max_length=32, null=False, editable=False)
+    order_number = models.CharField(max_length=50, null=False, editable=False)
     full_name = models.CharField(max_length=70, null=False, blank=False)
     email = models.EmailField(max_length=254, null=False, blank=False)
     phone_number = models.CharField(max_length=20, null=False, blank=False)
@@ -24,18 +25,15 @@ class Order(models.Model):
         """
         Generate a new order number
         """
-        return ShortUUIDField(
-                            length=7,
-                            max_length=10,
-                            alphabet="abcdefg1234",
-                            editable=False)
+        return shortuuid.uuid()
 
     def update_total(self):
         """
-        Update order total and calculates shipping.  
+        Update order total and calculates shipping.
         """
-        self.order_total = self.lineitems.aggregate(
-            Sum('lineitem_total'))['lineitem_total__sum'] or 0
+        print("This is an update")
+        self.order_total = self.lineitems.aggregate(Sum('lineitem_total'))['lineitem_total__sum']
+        print(self.order_total)
         self.save()
 
     def save(self, *args, **kwargs):
@@ -45,6 +43,10 @@ class Order(models.Model):
         if not self.order_number:
             self.order_number = self._new_order_number()
         super().save(*args, **kwargs)
+
+    
+    def __str__(self):
+        return self.order_number
 
 
 class OrderLineItem(models.Model):
@@ -58,5 +60,5 @@ class OrderLineItem(models.Model):
         """
         override original save method
         """
-        self.lineitem_total = self.product.price * self.quantity
+        self.lineitem_total = self.product.price
         super().save(*args, **kwargs)
